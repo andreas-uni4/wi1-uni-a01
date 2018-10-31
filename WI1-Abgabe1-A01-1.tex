@@ -1,0 +1,136 @@
+\documentclass[12pt,utf8]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,	
+	linkcolor=blue,     
+	citecolor=blue,     
+	filecolor=blue,     
+	urlcolor=blue     	
+}
+\usepackage{etoolbox}
+\apptocmd{\UrlBreaks}{\do\-\do\%\do\.}{}{}
+\usepackage[ngerman]{varioref}
+\usepackage{amsmath,amssymb,latexsym,amsfonts,amsthm,amsbsy,qtree}
+\usepackage{url}
+\usepackage[printonlyused]{acronym}
+\usepackage[utf8]{inputenc} 
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage[justification=centering]{caption}
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+\usepackage{pdfpages}
+
+
+\newcommand{\teilnehmerI}{Tom Dombeck}
+\newcommand{\mattI}{Matrikelnummer 1} 
+\newcommand{\mailI}{todo@uni-bremen.de}
+\newcommand{\teilnehmerII}{Andreas Schwarz}
+\newcommand{\mattII}{4250572}
+\newcommand{\mailII}{andreas4@uni-bremen.de}
+\newcommand{\teilnehmerIII}{Lasse Warnke}
+\newcommand{\mattIII}{Matrikelnummer 3}
+\newcommand{\mailIII}{lwarnke@uni-bremen.de}
+\newcommand{\thisgroup}{A01}
+\newcommand{\abgabedatum}{19.11.2018}
+\newcommand{\nummer}{1}
+\newcommand{\thema}{Hype-Cycle-Themen}
+\newcommand{\thistutor}{Tim Haß}
+\newcommand{\thissemester}{WiSe 2018/19}
+\newcommand{\thiscourse}{Wirtschaftsinformatik 1}
+\newcommand{\thisshortcourse}{WI1}
+
+
+\pagestyle{fancy}
+\fancyhead{} 												
+	\fancyhead[LO,RE]{\thissemester \\ \thisshortcourse} 
+	\fancyhead[RO,LE]{TutorIn: \thistutor \\ Gruppe: \thisgroup }
+	\fancyfoot{} 											
+	\cfoot{\thepage} 										
+	\setlength{\headsep}{2cm} 								
+
+
+\begin{document}
+\begin{titlepage}
+	\vspace*{\baselineskip}		
+	\centering					
+	\LARGE							
+	\thiscourse \\ 					
+	\vspace{1cm}					
+	{\Huge 							
+	\textbf{Abgabe \nummer: \thema}} \\ 
+	\vspace{1.5cm} 					
+	TutorIn: \thistutor \\ 		
+	\abgabedatum \\ 				
+	\vfill 							
+	Gruppe: \thisgroup \\ 			
+	\vspace{.5cm} 					
+	\large 							
+	\begin{tabular}{c|c|c} 		
+	\teilnehmerI	& \teilnehmerII & \teilnehmerIII \\ 
+	\mattI	& \mattII &  \mattIII\\ 
+	\mailI	& \mailII & \mailIII \\ 
+	\end{tabular} 
+\end{titlepage}
+
+
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\begin{flushleft}
+\setcounter{page}{1}
+
+
+\section{\label{sec:thema}Aufgabe 1.1: Augmented Reality}
+\subsection{\label{sub:thema}a.) Beschreibung von Themegebiet}
+
+...Beschreibung...
+
+\subsection{\label{sub2:thema}b.) eigene Definition}
+
+...Definition...
+
+\subsection{\label{sub3:thema}c.) Ausprägungen und Abwandlungen}
+
+...Beschreibung...
+
+\subsection{\label{sub4:thema}d.) mögliche zukünftige Entwicklung}
+
+...Text...
+
+
+\section{\label{sec:einfuehrung}Aufgabe 1.2: Unterschiede und Gemeinsamkeiten beim Verständnis von Wirtschaftsinformatik}
+\subsection{\label{sub:einfuehrung}a.) Kriterien für einen Vergleich}
+
+...sechs Kriterien....
+
+\subsection{\label{sub2:einfuehrung}b.) Vergleich von den Zeitschriften HMD und BISE}
+
+...Vergleich...
+
+\subsection{\label{sub3:einfuehrung}c.) Vergleich von den Zeitschriften MISQE und ISR}
+
+...Vergleich...
+
+\subsection{\label{sub4:einfuehrung}d.) Vergleich von den Veröffentlichungen aus Deutschland (HMD und BISE) mit denen aus dem internationalen bzw. anglo-amerikanischen Bereich (MISQE und ISR).}
+
+...Vergleich...
+
+
+\newpage
+\section{\label{sec:bonus}Bonusaufgabe}
+
+Die Seite für die Bonusaufgabe....
+
+
+\newpage
+\addcontentsline{toc}{section}{Literaturverzeichniss}
+\bibliography{Literaturdatenbank}
+
+
+\end{flushleft}
+\end{document}
